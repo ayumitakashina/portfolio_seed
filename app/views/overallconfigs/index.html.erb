@@ -1,2 +1,13 @@
-<h1>Overallconfigs#index</h1>
-<p>Find me in app/views/overallconfigs/index.html.erb</p>
+<% @overall.each do |o| %>
+  <h1><%= o.title %></h1>
+<% end %>
+
+<% @artistname.each do |a| %>
+  <nav><%= a.name %></nav>
+<% end %>
+
+<% @musictitle.each do |m| %>
+  <p><%= m.title %>
+     <%= m.video %></p>
+<hr>
+<% end %>
